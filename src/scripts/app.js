@@ -51,9 +51,10 @@ function renderTasks() {
     filtered.forEach(task => {
         const li = document.createElement("li");
         li.className = task.completed ? "completed" : "";
+        // Use the ` symbol here:
         li.innerHTML = `
-      <span onclick="toggleTask(${task.id})">${task.text}</span>
-      <button onclick="deleteTask(${task.id})">❌</button>
+        <span onclick="toggleTask(${task.id})">${task.text}</span>
+        <button onclick="deleteTask(${task.id})">❌</button>
     `;
         list.appendChild(li);
     });
