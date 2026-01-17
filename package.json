@@ -1,0 +1,23 @@
+{
+  "name": "mark-z_todoapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "echo Build completed",
+    "lint": "echo Lint completed",
+    "test": "echo Test completed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zaffraj-Suzanee/Mark-z_ToDoApp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Zaffraj-Suzanee/Mark-z_ToDoApp/issues"
+  },
+  "homepage": "https://github.com/Zaffraj-Suzanee/Mark-z_ToDoApp#readme"
+}
