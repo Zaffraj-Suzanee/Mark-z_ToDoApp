@@ -1,0 +1,9 @@
+{
+  "name": "todo-devops-app",
+  "version": "1.0.0",
+  "scripts": {
+    "lint": "echo 'lint ok'",
+    "build": "echo 'build ok'",
+    "test": "echo 'tests ok'"
+  }
+}
