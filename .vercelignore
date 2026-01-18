@@ -1,0 +1,6 @@
+backend/
+controllers/
+routes/
+server.js
+node_modules/
+*.log
