@@ -1,0 +1,35 @@
+let todos = [];
+
+export default function handler(req, res) {
+  const { method } = req;
+
+  if (method === "GET") {
+    return res.status(200).json(todos);
+  }
+
+  if (method === "POST") {
+    const todo = {
+      id: Date.now(),
+      text: req.body.text,
+      completed: false,
+    };
+    todos.push(todo);
+    return res.status(201).json(todo);
+  }
+
+  if (method === "PUT") {
+    const id = Number(req.body.id);
+    todos = todos.map((t) =>
+      t.id === id ? { ...t, completed: !t.completed } : t
+    );
+    return res.json({ message: "Todo updated" });
+  }
+
+  if (method === "DELETE") {
+    const id = Number(req.body.id);
+    todos = todos.filter((t) => t.id !== id);
+    return res.json({ message: "Todo deleted" });
+  }
+
+  res.status(405).json({ message: "Method not allowed" });
+}

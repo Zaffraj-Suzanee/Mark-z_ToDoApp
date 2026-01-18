@@ -1,6 +1,6 @@
 const express = require("express");
 const cors = require("cors");
-const todoRoutes = require("./routes/todo.routes");
+const todoRoutes = require("./routes/todo.routes.js");
 
 const app = express();
 const PORT = 5000;
