@@ -4,12 +4,13 @@ export default function handler(req, res) {
   const { method } = req;
 
   if (method === "GET") return res.status(200).json(todos);
+
   if (method === "POST") {
     const todo = { id: Date.now(), text: req.body.text, completed: false };
     todos.push(todo);
     return res.status(201).json(todo);
   }
-  
+
   if (method === "PUT") {
     const id = Number(req.body.id);
     todos = todos.map(t => (t.id === id ? { ...t, completed: !t.completed } : t));
