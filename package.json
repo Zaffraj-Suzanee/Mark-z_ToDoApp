@@ -1,23 +1,13 @@
 {
-  "name": "mark-z_todoapp",
+  "name": "mark-z-todoapp",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Frontend-only Todo App",
+  "main": "src/scripts/app.js",
   "scripts": {
-    "build": "echo Build completed",
-    "lint": "echo Lint completed",
-    "test": "echo Test completed"
+    "start": "echo 'Frontend only, no build needed'",
+    "test": "echo 'No tests'"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Zaffraj-Suzanee/Mark-z_ToDoApp.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/Zaffraj-Suzanee/Mark-z_ToDoApp/issues"
-  },
-  "homepage": "https://github.com/Zaffraj-Suzanee/Mark-z_ToDoApp#readme"
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {}
 }
