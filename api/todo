@@ -4,7 +4,7 @@ export default function handler(req, res) {
   const { method } = req;
 
   if (method === "GET") return res.status(200).json(todos);
-
+  
   if (method === "POST") {
     const todo = { id: Date.now(), text: req.body.text, completed: false };
     todos.push(todo);
