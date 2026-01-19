@@ -1,69 +1,64 @@
-let tasks = [
-  { id: 1, title: "Learn JavaScript", completed: false },
-  { id: 2, title: "Build Todo App", completed: true },
-  { id: 3, title: "Deploy to Vercel", completed: false }
-];
+let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
+let filter = "all";
 
-let nextId = 4;
+function saveTasks() {
+  localStorage.setItem("tasks", JSON.stringify(tasks));
+}
 
-// Render tasks in the UI
+function addTask() {
+  const input = document.getElementById("taskInput");
+  if (!input.value) return;
+
+  tasks.push({
+    id: Date.now(),
+    text: input.value,
+    completed: false
+  });
+
+  input.value = "";
+  saveTasks();
+  renderTasks();
+}
+
+function toggleTask(id) {
+  tasks = tasks.map(task =>
+    task.id === id ? { ...task, completed: !task.completed } : task
+  );
+  saveTasks();
+  renderTasks();
+}
+
+function deleteTask(id) {
+  tasks = tasks.filter(task => task.id !== id);
+  saveTasks();
+  renderTasks();
+}
+
+function filterTasks(type) {
+  filter = type;
+  renderTasks();
+}
+
 function renderTasks() {
   const list = document.getElementById("taskList");
   const counter = document.getElementById("counter");
   list.innerHTML = "";
 
-  tasks.forEach(task => {
-    const li = document.createElement("li");
-    li.textContent = task.title;
-    li.className = task.completed ? "completed" : "";
-    
-    // Toggle completion on click
-    li.onclick = () => toggleTask(task.id);
+  let filtered = tasks;
+  if (filter === "active") filtered = tasks.filter(t => !t.completed);
+  if (filter === "completed") filtered = tasks.filter(t => t.completed);
 
-    // Delete button
-    const delBtn = document.createElement("button");
-    delBtn.textContent = "❌";
-    delBtn.onclick = (e) => {
-      e.stopPropagation(); // prevent toggle
-      deleteTask(task.id);
-    };
-    
-    li.appendChild(delBtn);
+  filtered.forEach(task => {
+    const li = document.createElement("li");
+    li.className = task.completed ? "completed" : "";
+    li.innerHTML = `
+      <span onclick="toggleTask(${task.id})">${task.text}</span>
+      <button onclick="deleteTask(${task.id})">❌</button>
+    `;
     list.appendChild(li);
   });
 
-  counter.innerText = "Total Tasks: ${tasks.length}";
+  counter.innerText = `Total Tasks: ${tasks.length}`;
 }
 
-// Add a new task
-function addTask() {
-  const input = document.getElementById("taskInput");
-  if (!input.value) return;
-
-  tasks.push({ id: nextId++, title: input.value, completed: false });
-  input.value = "";
-  renderTasks();
-}
-
-// Toggle task completed
-function toggleTask(id) {
-  tasks = tasks.map(task =>
-    task.id === id ? { ...task, completed: !task.completed } : task
-  );
-  renderTasks();
-}
-
-// Delete a task
-function deleteTask(id) {
-  tasks = tasks.filter(task => task.id !== id);
-  renderTasks();
-}
-
-// Initialize
-window.addEventListener("DOMContentLoaded", () => {
-  renderTasks();
-
-  // Add button event
-  const addBtn = document.getElementById("addBtn");
-  if (addBtn) addBtn.onclick = addTask;
-});
+renderTasks();

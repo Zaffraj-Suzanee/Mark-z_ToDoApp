@@ -5,6 +5,7 @@
   "main": "src/scripts/app.js",
   "scripts": {
     "start": "echo 'Frontend only, no build needed'",
+    "build": "echo `build completed`",
     "test": "echo 'No tests'"
   },
   "author": "Your Name",
