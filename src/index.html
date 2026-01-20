@@ -1,22 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Todo List App</title>
-  <link rel="stylesheet" href="styles/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Todo App</title>
+  <link rel="stylesheet" href="/styles/style.css">
 </head>
 <body>
-  <div class="container">
-    <h1>Todo List</h1>
-    <div class="input-section">
-      <input id="task-input" type="text" placeholder="Enter new task">
-      <button id="add-btn">Add Task</button>
+
+  <div class="app">
+    <h1>📝 Todo List</h1>
+
+    <div class="input-group">
+      <input type="text" id="taskInput" placeholder="Add a new task">
+      <button onclick="addTask()">Add</button>
     </div>
-    <ul id="task-list"></ul>
+
+    <div class="filters">
+      <button onclick="filterTasks('all')">All</button>
+      <button onclick="filterTasks('active')">Active</button>
+      <button onclick="filterTasks('completed')">Completed</button>
+    </div>
+
+    <p id="counter"></p>
+
+    <ul id="taskList"></ul>
   </div>
 
-  <script src="scripts/app.js"></script>
+  <script src="/scripts/app.js"></script>
 </body>
 </html>
 
