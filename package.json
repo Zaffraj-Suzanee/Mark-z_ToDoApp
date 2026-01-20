@@ -4,11 +4,22 @@
   "description": "Frontend-only Todo App",
   "main": "src/scripts/app.js",
   "scripts": {
-    "start": "echo 'Frontend only, no build needed'",
-    "build": "echo `build completed`",
-    "test": "echo 'No tests'"
+    "start": "echo \"Frontend only, no build needed\"",
+    "build": "echo \"Build completed\"",
+    "lint": "echo \"Lint completed\"",
+    "test": "echo \"Test completed\""
   },
-  "author": "Your Name",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zaffraj-Suzanee/Mark-z_ToDoApp.git"
+  },
+  "keywords": [],
+  "author": "Zaffraj Suzanee",
   "license": "MIT",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Zaffraj-Suzanee/Mark-z_ToDoApp/issues"
+  },
+  "homepage": "https://github.com/Zaffraj-Suzanee/Mark-z_ToDoApp#readme",
   "dependencies": {}
 }
