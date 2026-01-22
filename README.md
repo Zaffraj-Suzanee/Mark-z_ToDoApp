@@ -164,23 +164,22 @@ npm run dev
    ### Phase 2: Development (15-75 minutes)
 
    #### Step 6: Create Feature Branches (Each Developer)
-   Each team member should:
-
-    ```bash       
+   
+   ```bash       
    # Update local repository
    git checkout develop
    git pull origin develop
 
    # Create your feature branch
    git checkout -b feature/[feature-name]
-
-   # Example:
-   # git checkout -b feature/Project-Setup
-   # git checkout -b feature/login-ravindya
-   # git checkout -b feature/backend-project
    ```
 
-   #### Step 7: Develop Features (Each Developer)
+   Example:
+   1. git checkout -b feature/Project-Setup
+   2. git checkout -b feature/login-ravindya
+   3. git checkout -b feature/backend-project
+
+#### Step 7: Develop Features (Each Developer)
    Guidelines for commits:
    1. Commit frequently (every significant change)
    2. Write meaningful commit messages
