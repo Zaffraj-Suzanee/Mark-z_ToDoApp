@@ -7,7 +7,7 @@
    - **Student4 :** Rashmi Sewmini - ITBIN-2313-0106 - Role: Technical content engineer
 
 ## Project Description:
-   Mark-z_ToDoApp is the simple task management application that allows users to add, delete, and mark complete tasks. And also users filter their tasks under the all, active, and completed categories.It includes task counter and simple local storage with responsive UI design.It manages users daily tasks efficiently.
+   Mark-z_ToDoApp is the simple task management application that allows users to add, delete, and mark task as complete by clicking on tasks. And also users filter their tasks under the all, active, and completed categories.It includes task counter and simple local storage with responsive UI design.It manages users daily tasks efficiently.
 
    The project demonstrates advanced Git practices and CI/CD implementation using Github Actions with automatic deployment to Vercel.
 
@@ -164,7 +164,7 @@ npm run dev
    ### Phase 2: Development (15-75 minutes)
 
    #### Step 6: Create Feature Branches (Each Developer)
-   
+
    ```bash       
    # Update local repository
    git checkout develop
@@ -184,12 +184,12 @@ npm run dev
    1. Commit frequently (every significant change)
    2. Write meaningful commit messages
    3. Follow commit message conventions:
-          feat: new feature
-          fix: bug fix
-          docs: documentation changes
-          style: formatting changes
-          refactor: code refactoring
-          test: adding tests
+          feat: new feature,
+          fix: bug fix,
+          docs: documentation changes,
+          style: formatting changes,
+          refactor: code refactoring,
+          test: adding tests,
           chore: maintenance tasks
 
 Example workflow:
