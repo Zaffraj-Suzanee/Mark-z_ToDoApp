@@ -108,6 +108,22 @@ npm run dev
    - Backend frontend connection problems
    - There were issues when we tried to deploy
 
+  ### Example: Merge Conflict Resolution
+
+   A merge conflict occurred while merging the `develop` branch into the `main` branch.
+
+#### Conflict Details:
+- Duplicate Node.js versions were detected in the GitHub Actions
+  workflow configuration file.
+- Duplicate and conflicting entries were found in `package.json`
+  (scripts).
+
+ #### Resolution:
+- The Node.js version was standardized to a single version across
+  the workflow file.
+- Duplicate lines in `package.json` were manually fixed and merged into
+  a clean, consistent configuration.
+
 ## Build Status
    ![CI Pipeline](https://github.com/Zaffraj-Suzanee/Mark-z_ToDoApp/workflows/CI%20Pipeline/badge.svg)
    ![Deploy](https://github.com/Zaffraj-Suzanee/Mark-z_ToDoApp/workflows/Deploy%20to%20Production/badge.svg)
@@ -344,6 +360,17 @@ git checkout main
 git merge develop
 git push origin main
 ```
+
+#### Code Attribution:
+
+Parts of this project were adapted from external resources for learning and implementation purposes.
+
+Sources include:
+- Express.js official documentation
+- GitHub examples for CI/CD workflows
+- lecture materials
+
+All external code has been modified and integrated to fit the project requirements.
 
 **By following the above guidlines, this project demonstrates a well-structured Devops implementation using CI/CD pipelines and advanced GitHub Practices.**
 
