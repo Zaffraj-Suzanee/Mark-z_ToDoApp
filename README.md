@@ -3,8 +3,8 @@
 ## Group Information:
    - **Student1 :** Mohamed Musadique Zaffraj Suzanee - ITBIN-2313-0113 - Role: Devops Engineer 
    - **Student2 :** Ravindya Shaw - ITBIN-2313-0108 - Role: Backend Developer
-   - **Student1 :** Chamudi Thamasha- ITBIN-2313-0114 - Role: Frontend Developer
-   - **Student1 :** Rashmi Sewmini - ITBIN-2313-0106 - Role: Technical content engineer
+   - **Student3 :** Chamudi Thamasha- ITBIN-2313-0114 - Role: Frontend Developer
+   - **Student4 :** Rashmi Sewmini - ITBIN-2313-0106 - Role: Technical content engineer
 
 ## Project Description:
    Mark-z_ToDoApp is the simple task management application that allows users to add, delete, and mark complete tasks. And also users filter their tasks under the all, active, and completed categories.It includes task counter and simple local storage with responsive UI design.It manages users daily tasks efficiently.
@@ -12,7 +12,7 @@
    The project demonstrates advanced Git practices and CI/CD implementation using Github Actions with automatic deployment to Vercel.
 
 ## Live Deployment:
-   **Live URL:** [https://mark-z-to-do-app.vercel.app/]
+   **Live URL:** [https://mark-z-to-do-app.vercel.app]
 
 ## Technologies Used:
    - HTML5, CSS3, JavaScript
@@ -72,15 +72,15 @@
 
 ## Setup Instructions
 
-   ### Prerequisites
-   - Node.js (version 18 or higher)
-   - Git
+### Prerequisites
+- Node.js (version 18 or higher)
+- Git
 
-   ### Installation
-   ```bash
-     # Clone the repository
-     git clone [https://github.com/Zaffraj-Suzanee/Mark-z_ToDoApp.git]
-
+### Installation
+```bash
+# Clone the repository
+git clone [https://github.com/Zaffraj-Suzanee/Mark-z_ToDoApp.git]
+   
 # Navigate to project directory
 cd [Mark-z_ToDoApp]
 
@@ -89,25 +89,26 @@ npm install
 
 # Run development server
 npm run dev
+```
 
-# Deployment Process
-    The project uses a CI/CD pipeline implemented with GitHub Actions to automate the build, test, and deployment process.When a developer pushes code or creates a pull request to the develop or main branch, the CI pipeline is automatically triggered. The pipeline installs project dependencies, checks for build errors, and validates the application to ensure code quality and stability.
+## Deployment Process
+   The project uses a CI/CD pipeline implemented with GitHub Actions to automate the build, test, and deployment process.When a developer pushes code or creates a pull request to the develop or main branch, the CI pipeline is automatically triggered. The pipeline installs project dependencies, checks for build errors, and validates the application to ensure code quality and stability.
 
-    Once the code passes all CI stages and is merged into the main branch, the CD process deploys the application to the cloud hosting platform (Vercel). The deployment is fully automated, ensuring that the latest stable version of the application is always available in the production environment.
+   Once the code passes all CI stages and is merged into the main branch, the CD process deploys the application to the cloud hosting platform (Vercel). The deployment is fully automated, ensuring that the latest stable version of the application is always available in the production environment.
 
-    Environment variables and secrets (such as deployment tokens) are securely managed using GitHub Secrets, preventing sensitive information from being exposed in the repository.This automated deployment process reduces manual errors, ensures consistency across environments, and enables faster and more reliable releases.
+   Environment variables and secrets (such as deployment tokens) are securely managed using GitHub Secrets, preventing sensitive information from being exposed in the repository.This automated deployment process reduces manual errors, ensures consistency across environments, and enables faster and more reliable releases.
 
-# Deployment & Testing Strategy
+## Deployment & Testing Strategy
    The application was deployed using Vercel with GitHub integration.During development, all features were tested on the develop branch using Vercel preview deployments to ensure stability before production release.
 
    No custom Vercel configuration files (vercel.json, .vercelignore) were required, as the default Vercel setup fully supported the project structure and build process.After successful testing and verification, the develop branch was merged into main, which triggered the production deployment automatically via the CI/CD pipeline.
 
-# Challenges Faced
+## Challenges Faced
    - Merge conflicts during branch integration
    - Backend frontend connection problems
    - There were issues when we tried to deploy
 
-# Build Status
+## Build Status
    ![CI Pipeline](https://github.com/Zaffraj-Suzanee/Mark-z_ToDoApp/workflows/CI%20Pipeline/badge.svg)
    ![Deploy](https://github.com/Zaffraj-Suzanee/Mark-z_ToDoApp/workflows/Deploy%20to%20Production/badge.svg)
 
@@ -127,7 +128,7 @@ npm run dev
    3. Name: `[Mark-z_ToDoApp]-DEVOPS-PROJECTS`
    4. Description: "Advanced Git & DevOps Assignment - [Group Number-5]"
    5. Select **PUBLIC**
-   6. Initialize with README: **NO** (we'll create our own)
+   6. Initialize with README: **NO** 
    7. Click "Create Repository"
 
    #### Step 3: Add Collaborators
@@ -135,12 +136,15 @@ npm run dev
    2. Add all team members by GitHub username
    3. Each member should accept the invitation
 
-   #### Step 4: Clone Repository (All Members)
-   ```bash
-   git clone https://github.com/Zaffraj-Suzanee/Mark-z_ToDoApp.git
-   cd Mark-z_ToDoApp
+#### Step 4: Clone Repository (All Members)
 
+   ```bash
+   git clone (https://github.com/Zaffraj-Suzanee/Mark-z_ToDoApp.git)
+   cd Mark-z_ToDoApp
+   ```
+   
 #### Step 5: Initial Setup (DevOps Engineer)
+   ```bash
    # Create initial files
    touch README.md .gitignore
 
@@ -155,10 +159,14 @@ npm run dev
    git add .
    git commit -m "chore: initial repository setup"
    git push origin develop
+   ```
 
    ### Phase 2: Development (15-75 minutes)
-   Step 6: Create Feature Branches (Each Developer)
+
+   #### Step 6: Create Feature Branches (Each Developer)
    Each team member should:
+
+    ```bash       
    # Update local repository
    git checkout develop
    git pull origin develop
@@ -170,12 +178,13 @@ npm run dev
    # git checkout -b feature/Project-Setup
    # git checkout -b feature/login-ravindya
    # git checkout -b feature/backend-project
+   ```
 
-   Step 7: Develop Your Features (Each Developer)
+   #### Step 7: Develop Features (Each Developer)
    Guidelines for commits:
-   Commit frequently (every significant change)
-   Write meaningful commit messages
-   Follow commit message conventions:
+   1. Commit frequently (every significant change)
+   2. Write meaningful commit messages
+   3. Follow commit message conventions:
           feat: new feature
           fix: bug fix
           docs: documentation changes
@@ -185,8 +194,9 @@ npm run dev
           chore: maintenance tasks
 
 Example workflow:
-# Make changes to your files
+##### Make changes to your files
 
+```bash
 # Check status
 git status
 
@@ -198,20 +208,21 @@ git commit -m "feat: add homepage hero section"
 
 # Push to your feature branch
 git push origin feature/[feature-name]
+```
 
-Step 8: Create Pull Requests (Each Developer)
-Go to GitHub repository
+#### Step 8: Create Pull Requests (Each Developer)
 
-Click "Pull Requests" → "New Pull Request"
-Base: develop ← Compare: feature/[feature-name]
-Title: Clear description of what you've done
-Description: Detail the changes, any issues encountered
-Assign reviewers (your team members)
-Create Pull Request
+1. Go to GitHub repository
+2. Click "Pull Requests" → "New Pull Request"
+3. Base: develop ← Compare: feature/[feature-name]
+4. Title: Clear description of what you've done
+5. Description: Detail the changes, any issues encountered
+6. Assign reviewers (your team members)
+7. Create Pull Request
 
 Pull Request Template:
 
-  ## Description
+## Description
   This PR fixes merging and deployment issues and improves app functionality.
  
 ## Changes Made
@@ -224,7 +235,7 @@ Pull Request Template:
 - No console errors
 - Responsive on mobile
 
-Step 9: Code Review & Merge (All Members)
+#### Step 9: Code Review & Merge (All Members)
 
 Reviewers should:
 1. Check the code quality
@@ -234,6 +245,7 @@ Reviewers should:
 
 Merging process:
 
+```bash
 # Switch to develop
 git checkout develop
 
@@ -242,10 +254,11 @@ git merge feature/[feature-name] --no-ff
 
 # Push to remote
 git push origin develop
+```
 
-Phase 3: CI/CD Setup (45-75 minutes)
+### Phase 3: CI/CD Setup (45-75 minutes)
 
-Step 10: GitHub Actions Configuration (DevOps Engineer)
+#### Step 10: GitHub Actions Configuration (DevOps Engineer)
 
 Create CI Workflow:
 1. Create file: .github/workflows/ci.yml
@@ -260,7 +273,7 @@ Create Deployment Workflow:
 2. Add the deployment configuration
 3. Commit and push
 
-Step 11: Cloud Deployment Setup
+#### Step 11: Cloud Deployment Setup
 Option A: Vercel 
 Setup Steps:
 1. Go to vercel.com
@@ -284,7 +297,7 @@ VERCEL_TOKEN: [your token]
 ORG_ID: Found in Vercel project settings
 PROJECT_ID: Found in Vercel project settings
 
-Note: We use vercel platform for deployment
+**Note: We use vercel platform for deployment**
 
 Option B: Netlify
 Setup Steps:
@@ -314,18 +327,24 @@ Build Command: npm run build
 Publish Directory: dist or build
 6. Create Static Site
 
-Phase 4: Finalisation (75-100 minutes)
+#### Phase 4: Finalisation (75-100 minutes)
 
-Step 12: Merge to Main (DevOps Engineer)
-# Ensure all features are merged to develop
+#### Step 12: Merge to Main (DevOps Engineer)
+
+1. Ensure all features are merged to develop
+```bash
 git checkout develop
 git pull origin develop
+```
 
-# Create Pull Request from develop to main on GitHub
-# After approval, merge to main
+2. Create Pull Request from develop to main on GitHub
+3. After approval, merge to main
+
+```bash
 git checkout main
 git merge develop
 git push origin main
+```
 
-
+**By following the above guidlines, this project demonstrates a well-structured Devops implementation using CI/CD pipelines and advanced GitHub Practices.**
 
