@@ -1,5 +1,5 @@
 # Use official Node image
-FROM node:18
+FROM node:18-alpine
 
 # Set working directory
 WORKDIR /app
@@ -8,7 +8,7 @@ WORKDIR /app
 COPY backend/package*.json ./
 
 # Install dependencies
-RUN npm install
+RUN npm install --omit=dev
 
 # Copy rest of files
 COPY backend/ ./
