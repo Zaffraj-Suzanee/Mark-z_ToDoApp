@@ -9,16 +9,17 @@
 ## Project Description:
    Mark-z_ToDoApp is the simple task management application that allows users to add, delete, and mark task as complete by clicking on tasks. And also users filter their tasks under the all, active, and completed categories.It includes task counter and simple local storage with responsive UI design.It manages users daily tasks efficiently.
 
-   The project demonstrates advanced Git practices and CI/CD implementation using Github Actions with automatic deployment to Vercel.
+   The project demonstrates advanced Git practices and CI/CD implementation using Github Actions with automatic deployment to Vercel and containerization.
 
 ## Live Deployment:
    **Live URL:** [https://mark-z-to-do-app.vercel.app]
 
 ## Technologies Used:
    - HTML5, CSS3, JavaScript
-   - Node.js
+   - Node.js, Express.js
    - Git and GitHub
    - GitHub Actions (CI/CD)
+   - Docker
    - Vercel(Deployment platform)
 
 ## Features:
@@ -35,6 +36,63 @@
 ## Backend Documentation:
    - The backend is built with Node.js and organized with controllers, routes, and server files. It handles API requests from the frontend and manages tosos in-memory. The structure allows easy development and testing without a database.
 
+## Docker documentation:
+This project demonstrates how to run a ToDo application using Docker.
+Docker allows the app to run in any system without installing dependencies manually.The application is packaged inside containers to make deployment easy and consistent.
+
+The project contains:
+- Dockerfile
+- docker-compose.yml
+- dockerignore
+
+### Docker Concept Used
+
+#### 1. Dockerfile
+Dockerfile is used to create a Docker image for the ToDo application.
+
+It defines:
+- Base image
+- Dependencies
+- Working directory
+- Commands to run the app
+
+#### 2. Docker Compose
+docker-compose.yml is used to run multi-container applications.
+
+It defines:
+- Services
+- Ports
+- Volumes
+- Container names
+
+Docker Compose allows running the whole app using one command.
+
+#### Requirements
+
+Make sure you installed:
+
+- Docker
+- Docker Compose
+
+
+#### Clone Repository
+
+```bash
+git clone https://github.com/Zaffraj-Suzanee/Mark-z_ToDoApp.git
+cd Mark-z_ToDoApp
+```
+#### 1.Build and start container
+```bash
+docker compose up --build
+```
+#### 2.Run in background
+```bash
+docker compose up -d
+```
+#### 3.Open browser
+    - http://localhost:5000
+
+
 ## Branch Strategy:
    We implemented the following branching strategy:
    - `main` - Production branch
@@ -50,6 +108,7 @@
    - Create feature/project-setup for handle workflow configuration (CI pipeline)
    - Create feature/backend-project for handle some missing backend components and resolve run-time errors
    - Handle conflicts during the merging processes
+   - contribute to create docker files and make a report
 
    ### Ravindya Shaw [ITBIN-2313-0108]
    - Create feature/login-ravindya for contribute the backend authentication with good functionality
@@ -57,6 +116,7 @@
    - Handled code quality issues during error occurrences and debugging
    - Reviewing
    - commits when adding codes and fixing bugs.
+   - contribute to create docker files and make a report
 
    ### Chamudi Thamasha [ITBIN-2313-0114]
    - Create feature-chamudi-code-html for contribute the frontend UI functionality
@@ -64,11 +124,13 @@
    - Created UI-related documentation explaining page flow and components
    - Handle the code quality during the time of error  occurrence
    - commits when adding codes and fixing bugs.
+   - contribute to create docker files and make a report
    
    ### Rashmi Sewmini [ITBIN-2313-0106]
    - Prepared and structured the README.md file for the project
    - Documented project architecture (frontend–backend interaction flow)
    - Added detailed local development setup instructions (Node.js, dependencies)
+   - contribute to create docker files and make a report
 
 ## Setup Instructions
 

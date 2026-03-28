@@ -12,6 +12,7 @@ RUN npm install --omit=dev
 
 # Copy rest of files
 COPY backend/ ./
+COPY src/ ./src/
 
 # Expose backend port
 EXPOSE 5000
