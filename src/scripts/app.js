@@ -62,3 +62,4 @@ function renderTasks() {
 }
 
 renderTasks();
+//Task logic intergration verified by Ravindya Shaw
