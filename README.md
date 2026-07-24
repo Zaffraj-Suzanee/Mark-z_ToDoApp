@@ -1,4 +1,4 @@
-# Project Tittle : Mark-z_ToDoApp
+# Project Tittle : Mark-z_ToDoApp.
 
 ## Group Information:
    - **Student1 :** Mohamed Musadique Zaffraj Suzanee - ITBIN-2313-0113 - Role: Devops Engineer 
