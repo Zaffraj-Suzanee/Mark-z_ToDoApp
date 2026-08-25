@@ -1,7 +1,7 @@
 # Project Tittle : Mark-z_ToDoApp
 
 ## Group Information:
-   - **Student1 :** Mohamed Musadique Zaffraj Suzanee - ITBIN-2313-0113 - Role: Devops Engineer 
+   - **Student1 :** Mohamed Musadique Zaffraj Suzanee  - Role: Devops Engineer 
    - **Student2 :** Ravindya Shaw - ITBIN-2313-0108 - Role: Backend Developer
    - **Student3 :** Chamudi Thamasha- ITBIN-2313-0114 - Role: Frontend Developer
    - **Student4 :** Rashmi Sewmini - ITBIN-2313-0106 - Role: Technical content engineer
