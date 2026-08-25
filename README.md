@@ -1,11 +1,5 @@
 # Project Tittle : Mark-z_ToDoApp
 
-## Group Information:
-   - **Student1 :** Mohamed Musadique Zaffraj Suzanee - ITBIN-2313-0113 - Role: Devops Engineer 
-   - **Student2 :** Ravindya Shaw - ITBIN-2313-0108 - Role: Backend Developer
-   - **Student3 :** Chamudi Thamasha- ITBIN-2313-0114 - Role: Frontend Developer
-   - **Student4 :** Rashmi Sewmini - ITBIN-2313-0106 - Role: Technical content engineer
-
 ## Project Description:
    Mark-z_ToDoApp is the simple task management application that allows users to add, delete, and mark task as complete by clicking on tasks. And also users filter their tasks under the all, active, and completed categories.It includes task counter and simple local storage with responsive UI design.It manages users daily tasks efficiently.
 
@@ -422,6 +416,11 @@ git checkout main
 git merge develop
 git push origin main
 ```
+### Group Information:
+   - **Student1 :** Zaffraj Suzanee - Role: Devops Engineer 
+   - **Student2 :** Ravindya Shaw - Role: Backend Developer
+   - **Student3 :** Chamudi Thamasha - Role: Frontend Developer
+   - **Student4 :** Rashmi Sewmini - Role: Technical content engineer
 
 #### Code Attribution:
 
