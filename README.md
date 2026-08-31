@@ -1,4 +1,4 @@
-# Project Tittle : Mark-z_ToDoApp
+# Project Tittle : Mark-z_ToDoApp.
 
 ## Project Description:
    Mark-z_ToDoApp is the simple task management application that allows users to add, delete, and mark task as complete by clicking on tasks. And also users filter their tasks under the all, active, and completed categories.It includes task counter and simple local storage with responsive UI design.It manages users daily tasks efficiently.
