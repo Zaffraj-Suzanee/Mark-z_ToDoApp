@@ -93,39 +93,6 @@ docker compose up -d
    - `develop` - Integration branch
    - `feature/*` - Feature development branches
 
-## Individual Contributions
-
-   ### Mohamed Musadique Zaffraj Suzanee [ITBIN-2313-0113]
-   - Repository setup and configuration
-   - GitHub Actions CI/CD pipeline implementation
-   - Deployment setup and management
-   - Create feature/project-setup for handle workflow configuration (CI pipeline)
-   - Create feature/backend-project for handle some missing backend components and resolve run-time errors
-   - Handle conflicts during the merging processes
-   - contribute to create docker files and make a report
-
-   ### Ravindya Shaw [ITBIN-2313-0108]
-   - Create feature/login-ravindya for contribute the backend authentication with good functionality
-   - Ensured backend code followed proper standards and best practices
-   - Handled code quality issues during error occurrences and debugging
-   - Reviewing
-   - commits when adding codes and fixing bugs.
-   - contribute to create docker files and make a report
-
-   ### Chamudi Thamasha [ITBIN-2313-0114]
-   - Create feature-chamudi-code-html for contribute the frontend UI functionality
-   - Developed and improved frontend components with proper structure
-   - Created UI-related documentation explaining page flow and components
-   - Handle the code quality during the time of error  occurrence
-   - commits when adding codes and fixing bugs.
-   - contribute to create docker files and make a report
-   
-   ### Rashmi Sewmini [ITBIN-2313-0106]
-   - Prepared and structured the README.md file for the project
-   - Documented project architecture (frontend–backend interaction flow)
-   - Added detailed local development setup instructions (Node.js, dependencies)
-   - contribute to create docker files and make a report
-
 ## Setup Instructions
 
 ### Prerequisites
